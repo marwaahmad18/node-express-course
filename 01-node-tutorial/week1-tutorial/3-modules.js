@@ -1,5 +1,5 @@
 // CommonJS
-// Modules
+// Calling Modules (using 2 diff. Data types: A function & an Object of 2 variables)
 
 const names = require('./4-names')
 // //1) Assign it a variable
@@ -12,10 +12,10 @@ const names = require('./4-names')
 
 //  --   console.log(names)
         // Use console.log to call the 1 Object of 2 param.
-            // Where john & peter would appear without displaying the secret name
+            // Where john & peter would appear without displaying the "secret" variable
                 //(bcz I didn't add that to the "modules.exports={}" params.)
 
-// Same process to call the 1 function in the utils file, but without console.log.
+// Same process to call the 1 function in the utils file, but without console.log this time, bcz it would display "john undefined"
 const sayHi = require('./5-utils')
 
 sayHi('Susan')

@@ -1,5 +1,8 @@
-console.log(__dirname)
-console.log(__filename)
-setInterval(() => {
-    console.log("Hello world")
-}, 1000);
+const amount = 9
+if (amount<10){
+    console.log("small number");
+}
+else{
+    console.log("large number");
+}
+console.log("This is my 1st node app!");
