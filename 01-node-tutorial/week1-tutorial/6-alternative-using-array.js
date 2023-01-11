@@ -1,4 +1,6 @@
-//Testing with another data type: Arrays
+// CommonJS
+// Modules
+    //Testing with another data type: Arrays
 
 /*
 1) Create array of 2 items
@@ -16,7 +18,7 @@ module.exports.items = ['item1', 'item2']
 const person = {
     name: 'Bob',
 }
-    B) OR make it more complex:
+    B) OR make it more complex, as below:
 */
 module.exports.items = ['item1', 'item2']
 //Here we're setting up a property on the "items" Object, that happens to be equal to an array.
@@ -27,3 +29,5 @@ const person = {
 module.exports.singlePerson = person; //Here, we created another property "singlePerson" & set it equal to "person."
                                         // A simpler version, would have been to only: module.exports=person
                                          // PS: If we weren't exporting, we could have simply: console.log(person)
+                                            //PPS: This syntax gives the same outcome as writing: module.exports = {} *find under 4-names*
+                                                //Bcz you're setting up a value & calling it elsewhere. 

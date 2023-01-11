@@ -1,4 +1,6 @@
-//Data type: Function.
+// CommonJS
+// Modules
+    //Data type: Function.
 
 const sayHi = (name) =>{
     console.log(`Hey there ${name}`);

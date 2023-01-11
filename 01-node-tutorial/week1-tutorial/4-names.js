@@ -1,4 +1,6 @@
-// Data type: Object with 2 params.
+// CommonJS
+// Modules for
+    // Data type: Object with 2 params.
 
 // local (limit how much you want to share. Keep this one a secret).
 const secret ="SUPER SECRET"
