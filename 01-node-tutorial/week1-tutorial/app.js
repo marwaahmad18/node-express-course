@@ -1,19 +1,9 @@
-//HTTPS module 
+// installing packages tutorial (local dependencies)
 
-const http = require('http');
+const _ = require ("lodash")//this _ is commonly used as a varibale name to packages or dependencies.
 
-const server = http.createServer((req, res) => {
-if(req.url === '/'){
-   res.end('Welcome to our home page') 
-}
-if (req.url === '/about'){
-   res.end('Here is our short history') 
-}
-res.end(`
-<h1>Oops!</h1>
-<p>We can't seem to find the page you're looking for</p>
-<a href="/">back home</a>
-`)
-})
+const items = [1, [2, [3, [4]]]] //this is called the flatten deep method, located in lodash, makes it possible to return these as flat array.
+const newItems = _.flattenDeep(items);// Remember, we used _. to access it the available modules.
+console.log(newItems);
 
-server.listen(5000)
+
