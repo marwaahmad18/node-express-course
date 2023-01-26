@@ -8,6 +8,8 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, './navbar-app/index.html'))
+    //index.html can be added to static asset folder  too! The ./public, created above.
+      //In that case, we won't have to use the sendFile method anymore [Instructor commented this out]
 })
 
 app.all('*', (req, res) => {
