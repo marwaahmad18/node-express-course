@@ -58,7 +58,7 @@
           result.innerHTML = `<div class="alert alert-danger">Can't Fetch Data</div>`
         }
       }
-      fetchPeople()//Then we invoke that function
+      fetchPeople()
       // submit form
       const btn = document.querySelector('.submit-btn')
       const input = document.querySelector('.form-input')
@@ -68,13 +68,12 @@
         const nameValue = input.value
 
         try {
-          console.log('Button called')
           const { data } = await axios.post('/api/people', { name: nameValue })
           const h5 = document.createElement('h5')
           h5.textContent = data.person
           result.appendChild(h5)
         } catch (error) {
-          console.log(error.response)
+          // console.log(error.response)
           formAlert.textContent = error.response.data.msg
         }
         input.value = ''
