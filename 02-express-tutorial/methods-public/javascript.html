@@ -69,7 +69,7 @@
 
         try {
           console.log('Button called')
-          const { data } = await axios.post('/api/people', { name: nameValue })
+          const { data } = await axios.post('/api/people', { name: nameValue })//Perormig a post req. from the application
           const h5 = document.createElement('h5')
           h5.textContent = data.person
           result.appendChild(h5)
